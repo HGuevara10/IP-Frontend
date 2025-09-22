@@ -1,0 +1,28 @@
+.box {
+    background-color: #8F6D0A;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 20px;
+    width: 250px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.box p {
+    margin: 10px 0;
+}
+
+.box button {
+    margin-top: 10px;
+}

@@ -1,11 +1,10 @@
 import React from "react";
 import "./Box.css";
 
-function Box() {
+function Box({actor_name}) {
     return(
         <div className="box">
-            <h2>Actor Name</h2>
-            <p>Number of Movies Done: (num)</p> 
+            <h2>Name: {actor_name}</h2>
         </div>
     );
 }

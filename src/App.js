@@ -1,23 +1,50 @@
 import React from "react";
 import Navbar from "./navBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Box from "./Box";
+import Top5List from "./Top5List";
+import Genres from "./Genres";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div  className="title">
-        <h1>Top 5 Actors</h1>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          {/*Home Page*/}
+          <Route 
+            path="/" 
+            element={
+              <>
+                <Top5List title={"Top 5 Movies"}/>
+                <Top5List title={"Top 5 Actors"}/>
+              </>
+            }
+          />
+          {/*Genres Page*/}
+          <Route 
+            path="/Genres" 
+            element={               
+                <Genres />
+            } 
+          />
+          {/*Actors Page*/}
+          <Route 
+            path="/Actors" 
+            element={
+              <div style={{ color: "white" }}>Actors content here</div>
+            } 
+          />
+          {/*Users Page*/}
+          <Route 
+            path="/Users" 
+            element={
+              <div style={{ color: "white" }}>Users content here</div>
+            } 
+          />
+        </Routes>
       </div>
-      <div className="boxes-container"> 
-        <Box/>
-        <Box/>
-        <Box/>
-        <Box/>
-        <Box/>
-      </div>
-    </div>
+    </Router>
   );
 }
 

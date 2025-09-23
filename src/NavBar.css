@@ -1,15 +1,15 @@
 .navbar {
   display: flex;
-  justify-content: space-between; /* h1 left, links right */
+  justify-content: space-between; 
   align-items: center;
   background-color: #0D3E4A;
   color: white;
   padding: 20px 30px 20px 30px;
-  position: fixed;  /* stick to top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000; 
 }
 
 * {
@@ -22,13 +22,11 @@
   font-weight: bold;
 }
 
-/* Links container */
 .nav-items {
-  display: flex;   /* horizontal layout */
-  gap: 20px;       /* spacing between links */
+  display: flex;  
+  gap: 20px;  
 }
 
-/* Individual links */
 .nav-items a {
   color: white;
   text-decoration: none;
@@ -38,3 +36,15 @@
 .nav-items a:hover {
   text-decoration: underline;
 }
+
+.nav-items ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li {
+  margin-left: 20px;
+}
+

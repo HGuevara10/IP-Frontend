@@ -10,12 +10,11 @@
 .title {
   color: white;
   font-size: 30px;
-  display: flex;               /* make it a flex container */
-  justify-content: center;     /* center horizontally */
-  align-items: center;         /* center vertically */
-  width: 100%;                 /* stretch across the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-
 
 .App-header {
   background-color: #0A2B33;
@@ -29,9 +28,9 @@
 
 .boxes-container {
   display: flex;
-  justify-content: space-between; /* first box flush left, last box flush right */
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 0 20px; /* horizontal spacing inside container */
+  margin: 0 20px;
   gap: 20px;
 }

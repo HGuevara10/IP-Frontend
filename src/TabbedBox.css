@@ -1,0 +1,40 @@
+.tabbed-box{
+    background-color: #8F6D0A;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 75%;
+    max-width: 1200px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabs{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tabs button{
+    flex: 1;
+    padding: 8px 12px;
+    background: #ddd;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tabs button.active {
+    background: #fff;
+    border-bottom: 2px solid #8F6D0A;
+}
+
+.tab-content{
+    background: white;
+    border-radius: 0 0 6px 6px;
+    padding: 10px;
+    min-height: 100px;
+    color: black;
+    size: 12px;
+    font-size: small;
+}

@@ -6,6 +6,7 @@
   max-width: 1200px;
   padding: 20px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
 
 .dropdown-select {
@@ -19,11 +20,17 @@
 }
 
 .dropdown-content {
-  background: #fff;      /* white background for readability */
-  color: #000;           /* black text */
+  background: #fff;
+  color: #000;
   border-radius: 6px;
   padding: 12px;
   margin-top: 15px;
   font-size: 14px;
-  min-height: 100px;     /* ensures some space even if content is short */
+  min-height: 120px;
+}
+
+.dropdown-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
 }

@@ -1,9 +1,11 @@
 import React from "react";
 import Navbar from "./navBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
 import Top5List from "./Top5List";
 import Genres from "./Genres";
+import "./App.css";
+import UsersPage from "./Users";
+import Actors from "./Actors";
 
 function App() {
   return (
@@ -32,14 +34,14 @@ function App() {
           <Route 
             path="/Actors" 
             element={
-              <div style={{ color: "white" }}>Actors content here</div>
+              <Actors />
             } 
           />
           {/*Users Page*/}
           <Route 
             path="/Users" 
             element={
-              <div style={{ color: "white" }}>Users content here</div>
+              <UsersPage/>
             } 
           />
         </Routes>

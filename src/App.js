@@ -18,8 +18,8 @@ function App() {
             path="/" 
             element={
               <>
-                <Top5List title={"Top 5 Movies"}/>
-                <Top5List title={"Top 5 Actors"}/>
+                <Top5List title={"Top 5 Movies"} category="Movies"/>
+                <Top5List title={"Top 5 Actors"} category="Actors"/>
               </>
             }
           />

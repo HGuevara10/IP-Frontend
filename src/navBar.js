@@ -5,7 +5,7 @@ import "./NavBar.css";
 function Navbar() {
   return (
     <header className="navbar">
-      <h1 className="logo">My Website</h1>
+      <h1 className="logo">Sakila</h1>
       <nav className="nav-items">
         <Link to="/">Home</Link>
         <Link to="/Genres">Genres</Link>

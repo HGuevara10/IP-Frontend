@@ -6,7 +6,7 @@ function Genres() {
     return(
         <div className="genres">
             <h1 >
-                Genres
+                Films
             </h1>
             <DropdownBox />
         </div>

@@ -5,7 +5,6 @@ import Top5List from "./Top5List";
 import Genres from "./Genres";
 import "./App.css";
 import UsersPage from "./Users";
-import Actors from "./Actors";
 
 function App() {
   return (
@@ -23,18 +22,11 @@ function App() {
               </>
             }
           />
-          {/*Genres Page*/}
+          {/*Films Page*/}
           <Route 
             path="/Genres" 
             element={               
                 <Genres />
-            } 
-          />
-          {/*Actors Page*/}
-          <Route 
-            path="/Actors" 
-            element={
-              <Actors />
             } 
           />
           {/*Users Page*/}

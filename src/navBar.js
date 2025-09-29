@@ -8,9 +8,8 @@ function Navbar() {
       <h1 className="logo">Sakila</h1>
       <nav className="nav-items">
         <Link to="/">Home</Link>
-        <Link to="/Genres">Genres</Link>
-        <Link to="/Actors">Actors</Link>
-        <Link to="/Users">Users</Link>
+        <Link to="/Genres">Films</Link>
+        <Link to="/Users">Customers</Link>
       </nav>
     </header>
   );

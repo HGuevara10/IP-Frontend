@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import ActorDetailModal from "./ActorDetailModal";
+import MovieDetailModal from "./MovieDetailModal"; // new for movies
 import "./Box.css";
 
-function Box({movie_or_actor_name, rentals_or_actors, value}) {
-    return(
-        <div className="box">
-            <h2>Name: {movie_or_actor_name}</h2>
-            <text>Number Of {rentals_or_actors}: {value}</text>
-        </div>
-    );
+function Box({ data, category }) {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  return (
+    <>
+      <div className="box" onClick={() => setModalOpen(true)}>
+        <h2>{category === "Movies" ? data.title : data.name}</h2>
+        <p>
+          {category === "Movies"
+            ? `Number of Rentals: ${data.rented}`
+            : `Movies Starred In: ${data.movie_count}`}
+        </p>
+      </div>
+
+      {category === "Actors" && (
+        <ActorDetailModal
+          isOpen={isModalOpen}
+          onClose={() => setModalOpen(false)}
+          actor={data}
+        />
+      )}
+
+      {category === "Movies" && (
+        <MovieDetailModal
+          isOpen={isModalOpen}
+          onClose={() => setModalOpen(false)}
+          movie={data}
+        />
+      )}
+    </>
+  );
 }
 
 export default Box;

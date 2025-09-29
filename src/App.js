@@ -2,9 +2,9 @@ import React from "react";
 import Navbar from "./navBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Top5List from "./Top5List";
-import Genres from "./Genres";
 import "./App.css";
 import UsersPage from "./Users";
+import FilmsPage from "./FilmsPage";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          {/*Home Page*/}
+          {/* Home Page */}
           <Route 
             path="/" 
             element={
@@ -22,20 +22,10 @@ function App() {
               </>
             }
           />
-          {/*Films Page*/}
-          <Route 
-            path="/Genres" 
-            element={               
-                <Genres />
-            } 
-          />
-          {/*Users Page*/}
-          <Route 
-            path="/Users" 
-            element={
-              <UsersPage/>
-            } 
-          />
+          {/* Films Page */}
+          <Route path="/FilmsPage" element={<FilmsPage />} />
+          {/* Users Page */}
+          <Route path="/Users" element={<UsersPage />} />
         </Routes>
       </div>
     </Router>

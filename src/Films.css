@@ -1,0 +1,70 @@
+.films-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.user-input {
+  margin: 20px 0;
+  color: white;
+}
+
+.user-input label {
+  margin-right: 10px;
+}
+
+.user-input input {
+  padding: 5px;
+  width: 200px;
+}
+
+.films-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.film-row {
+  background-color: #8F6D0A;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  padding-right: 30px;
+  padding-left: 25px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.film-row:hover {
+  background-color: #A77F1C;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  text-align: left;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+}

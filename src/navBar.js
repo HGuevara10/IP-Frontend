@@ -8,7 +8,7 @@ function Navbar() {
       <h1 className="logo">Sakila</h1>
       <nav className="nav-items">
         <Link to="/">Home</Link>
-        <Link to="/Genres">Films</Link>
+        <Link to="/FilmsPage">Films</Link>
         <Link to="/Users">Customers</Link>
       </nav>
     </header>

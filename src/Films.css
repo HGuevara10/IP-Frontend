@@ -1,6 +1,8 @@
 .films-container {
   width: 90%;
   margin: 0 auto;
+  border-color: black;
+  border-width: 10px;
 }
 
 .user-input {
